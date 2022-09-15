@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-09-15-tarea-1/",
+    "title": "Tarea 1",
+    "description": "Tarea 1.",
+    "author": [
+      {
+        "name": "Carla Puentes",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-15",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-15T23:47:48+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to My Blog",
     "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
