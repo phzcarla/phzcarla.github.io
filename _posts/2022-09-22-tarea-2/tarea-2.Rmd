@@ -27,7 +27,7 @@ summary(modelo_1)
 
 #Se observa una relación negativa entre el coeficiente Gini de desigualdad educacional y Democracia Participativa, mientras menos desigualdad educacional exista, hay más democracia participativa.
 
-vdem%>%
+vdem %>%
   ggplot(aes(x = e_peedgini, y = v2x_partipdem)) +
   geom_point() +
   geom_smooth(method = "lm", se = T, color = "#ed6a5a") +
