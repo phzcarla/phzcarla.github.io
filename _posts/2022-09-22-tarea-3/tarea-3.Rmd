@@ -1,0 +1,97 @@
+---
+title: "Taller 3"
+description:
+author:
+  - name: Carla Puentes
+    url: 
+date: 2022-08-26
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+library(tidyverse)
+library(sjmisc)
+library(haven)
+library(kableExtra)
+
+df <- haven::read_dta("data/2004-2018 LAPOP AmericasBarometer Merge (v1.0FREE).dta"
+
+colnames(df)
+
+p_seleccion <- readxl::read_excel("input/220809 - Preguntas LAPOP.xlsx") %>% 
+  mutate(year_2010 = str_to_lower(year_2010)) %>% 
+  filter(!is.na(year_2010))
+  
+v_seleccion <- p_seleccion$year_2010
+
+frq(df, pais)
+
+lapop_chile_220824 <- df %>% 
+  select(pais, wave, year, v_seleccion, q2) %>% 
+  filter(pais == 13) %>% 
+  write_rds("output/lapop_chile_220824.rds") %>% 
+  write_dta("output/lapop_chile_220824.dta")
+
+lapop_int_220824 <- df %>% 
+  select(pais, wave, year, v_seleccion, q2) %>% 
+  write_dta(., "output/lapop_int_220824.dta") %>% 
+  write_rds(., "output/lapop_int_220824.rds")
+
+lapop_chile_220824%>%
+  filter(year==2008)%>%
+  frq(.,eff1)
+  
+```{r}
+lapop_chile_220824 %>% 
+  filter(year==2008) %>% 
+  ggplot(aes(x=as_factor(eff1))) +
+  geom_bar(color="#f08080",fill="#f4978e",alpha=0.5)+
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+
+  labs(title = "Figura 3. Gráfico de barras 'Interés del gobierno' (EFF1) para el año 2008.",
+       subtitle="Pregunta: 'A los que gobiernan el país le interesa lo que piensa la gente como usted. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?'",
+       x=" ", y="Frecuencia")+
+  theme_minimal(base_family="Arial")
+```
+
+```{r}
+lapop_chile_220824 %>% 
+ggplot(aes(x=as_factor(eff1),y=q2)) +
+  geom_jitter(shape=16,position=position_jitter(0.2),color="#588157")+
+  geom_boxplot(fill="#a3b18a",color="#3a5a40",alpha=0.5) +
+  stat_summary(fun=mean,colour="black",geom="text",show.legend=FALSE,
+               vjust=-0.7,family="Arial",
+               aes(label=round(..y.., digits=1))) +
+  scale_x_discrete(labels=function(x)str_wrap(x,width=10)) +
+    labs(title="Figura 4. Boxplot 'Interés del gobierno' (EFF1) por edad de los encuestados (q2) para el año 2008.",
+       subtitle = "Pregunta: 'A los que gobiernan el país le interesa lo que piensa la gente como usted. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?'", 
+       x =" ",y="Edad") +
+  theme_minimal(base_family="Arial")
+```
+library(kableExtra)
+install.packages("devtools")
+devtools::install_github("desuc/desuctools",force=TRUE)
+
+```{r}
+tabla_pais_pn4 <- tabla_vars_segmentos(lapop_int_220824,
+                                       .vars = vars(pn4),
+                                       .segmentos = vars(pais),
+                                       total = T)
+tabla_pais_pn4 %>%
+  select(2,5:7)%>%
+   mutate(prop = scales::percent(prop, accuracy = 2)) %>% 
+   knitr::kable(., 
+               col.names = c('País','Categoría','Casos','%'),
+               caption = 'Tabla 1: Respuestas acumulativas LAPOP 2008-2018.<br> Pregunta: En general, usted diría que está muy satisfecho, satisfecho, insatisfecho o <br> muy insatisfecho con la forma en que la democracia funciona en [pais].', align = 'llrr') %>% 
+  kable_styling(bootstrap_options = c("striped"), html_font = 'Arial') %>%
+  column_spec(1, width_min = "3cm") %>% 
+  column_spec(2, width_min = "3cm") %>% 
+  column_spec(3:4, width_min = "2cm") %>% 
+  collapse_rows(columns=1,valign='top')%>%
+  scroll_box(width = "100%", height = "300px")
+```
