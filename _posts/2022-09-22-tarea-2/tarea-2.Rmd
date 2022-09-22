@@ -22,7 +22,7 @@ Hipótesis:
 Modelo simple:
 
 ```{r}
-modelo_1 <- lm (v2x_partipdem ~ 1 + e_peedgini, data = vdem_subset, na.action = na.exclude)
+modelo_1 <- lm (v2x_partipdem ~ 1 + e_peedgini, data = vdem, na.action = na.exclude)
 summary(modelo_1)
 
 #Se observa una relación negativa entre el coeficiente Gini de desigualdad educacional y Democracia Participativa, mientras menos desigualdad educacional exista, hay más democracia participativa.
