@@ -1,7 +1,6 @@
 ---
 title: "Tarea 2"
-description: |
-  A short description of the post.
+description:
 author:
   - name: Carla Puentes
     url: {}
