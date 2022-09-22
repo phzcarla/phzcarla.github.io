@@ -1,0 +1,8 @@
+"0","library(tidyverse)"
+"0","library(sjmisc)"
+"0","library(kableExtra)"
+"0","library(dplyr)"
+"0","vdem <- read_rds (""vdem_subset.rds"")"
+"2","Warning: cannot open file 'vdem_subset.rds': No such file or directory"
+"2","Error in readRDS(con, refhook = refhook) : cannot open the connection
+"

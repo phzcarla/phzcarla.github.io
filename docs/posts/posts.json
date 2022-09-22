@@ -9,12 +9,12 @@
         "url": {}
       }
     ],
-    "date": "2022-09-15",
+    "date": "2022-09-22",
     "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2022-09-15T23:49:18+00:00",
-    "input_file": "tarea-1.knit.md"
+    "contents": "\r\nCarga de base de datos\r\n\r\n\r\nlibrary(tidyverse)\r\nlibrary(sjmisc)\r\nlibrary(kableExtra)\r\nlibrary(dplyr)\r\nvdem <- read_rds (\"vdem_subset.rds\")\r\n\r\n\r\nHistograma\r\n\r\n\r\nknitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, \r\n                      comment=NA, cache=T, R.options=list(width=220), \r\n                      fig.align='center', out.width='75%', fig.asp=.75)\r\n\r\nggplot(data    = vdem,\r\n  mapping = aes(x = v2x_partipdem)) +\r\n  geom_histogram(color = \"#ffafcc\", fill = \"#ffafcc\", alpha = 1.0)\r\n\r\n\r\n  labs(title = \"Histograma de Índice de Participación en la Democracia.\")\r\n\r\n$title\r\n[1] \"Histograma de Índice de Participación en la Democracia.\"\r\n\r\nattr(,\"class\")\r\n[1] \"labels\"\r\n\r\nGráfico de barras\r\n\r\n\r\nknitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, \r\n                      comment=NA, cache=T, R.options=list(width=220), \r\n                      fig.align='center', out.width='75%', fig.asp=.75)\r\nvdem %>% \r\n  ggplot(aes(x=as_factor(e_regionpol))) +\r\n  \r\n  geom_bar(color=\"#ffafcc\",fill=\"#ffafcc\",alpha=0.5)+\r\n  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+\r\n  labs(title = \"Cantidad de países según región geográfica\",\r\n       x=\"Regiones geográficas\", y=\"Frecuencia\") +\r\n  theme_minimal(base_family=\"Arial\")\r\n\r\n\r\n\r\nBoxplot\r\n\r\n\r\nknitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, \r\n                      comment=NA, cache=T, R.options=list(width=220), \r\n                      fig.align='center', out.width='75%', fig.asp=.75)\r\n\r\nvdem %>%\r\n  ggplot(aes(x=as_factor(e_regionpol),v2x_partipdem)) +\r\n  geom_boxplot(fill=\"#ffafcc\",color=\"#ffafcc\",alpha=0.5) +\r\n  stat_summary(fun=mean,colour=\"black\",geom=\"text\",show.legend=FALSE,\r\n               vjust=-0.5,family=\"Arial\",\r\n               aes(label=round(..y.., digits=1))) +\r\n  scale_x_discrete(labels=function(x)str_wrap(x,width=10)) +\r\n    labs(title=\"Boxplot: Índice de participación democrática por región.\",\r\n       subtitle = \"¿Hasta qué medida se alcanza el ideal de democracia participativa?.\", \r\n       x =\"Región\",y=\"Índice de participación democrática\") +\r\n  theme_minimal(base_family=\"Arial\")\r\n\r\n\r\n\r\nScatterplot\r\n\r\n\r\nknitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, \r\n                      comment=NA, cache=T, R.options=list(width=220), \r\n                      fig.align='center', out.width='75%', fig.asp=.75)\r\n\r\nggplot (vdem, aes(x= v2x_partipdem, y= e_peedgini)) + \r\n  geom_point()+\r\n  geom_smooth(method=lm)\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-09-15-tarea-1/tarea-1_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2022-09-22T01:48:37+00:00",
+    "input_file": {}
   },
   {
     "path": "posts/welcome/",
