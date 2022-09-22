@@ -5,7 +5,7 @@ description: |
 author:
   - name: Carla Puentes
     url: {}
-date: 2022-09-22
+date: 2022-09-08
 output:
   distill::distill_article:
     self_contained: false
@@ -16,8 +16,59 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+Hipótesis:
+# VI: e_peedgini, Question: How unequal is the level of education achieved by the population aged 15 years and older? VD: v2x_partipdem, Question: To what extent is the ideal of participatory democracy achieved?
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Modelo simple:
 
+```{r}
+modelo_1 <- lm (v2x_partipdem ~ 1 + e_peedgini, data = vdem_subset, na.action = na.exclude)
+summary(modelo_1)
+
+#Se observa una relación negativa entre el coeficiente Gini de desigualdad educacional y Democracia Participativa, mientras menos desigualdad educacional exista, hay más democracia participativa.
+
+vdem%>%
+  ggplot(aes(x = e_peedgini, y = v2x_partipdem)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = T, color = "#ed6a5a") +
+  labs(x = "Coeficiente de Gini de desigualdad educacional", y = "Democracia participativa")
+ 
+```
+
+Modelo lineal multiple:
+
+```{r}
+modelo_2 <- lm(v2x_partipdem~1+e_peedgini+e_gdppc,data=vdem)
+models <- list(modelo_1, modelo_2)
+
+screenreg(models,custom.model.names = c("Modelo 1", "Modelo 2"),custom.coef.names = c("Participación en Democracia", "Gini educación", "GDP per cápita"))
+
+```
+
+Evaluación de supuestos:
+
+```{r}
+par(mfrow = c(2, 2))
+plot(modelo_2)
+
+#Linealidad de los parámetros:
+ggplot(mapping = aes(x = modelo_2$fitted.values, y = modelo_2$residuals)) +
+  labs(x = "Valores predichos", y = "Residuos") +
+  geom_point() +
+  geom_hline(mapping = aes(yintercept = 0), color = "red")
+
+#Aditividad, evaluando la correlación de las variables (redondeando a un decimal), para así evitar tener multicolinealidad perfecta.
+
+library(ggcorrplot)
+
+corr_selected <- vdem %>% 
+  select(v2x_partipdem, v2x_cspart, v2elmulpar, v2psprlnks, e_peedgini, e_regionpol) %>% 
+  cor(use = "pairwise") %>% 
+  round(1)
+ggcorrplot(corr_selected, type = "lower", lab = T, show.legend = F)
+
+#Homocedasticidad:
+plot(modelo_2, 1)
+
+```
 
