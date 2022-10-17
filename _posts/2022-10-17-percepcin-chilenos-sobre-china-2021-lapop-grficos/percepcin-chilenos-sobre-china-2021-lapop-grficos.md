@@ -10,8 +10,8 @@ output:
     self_contained: false
 ---
 
-```{r}
 
+```r
 ## En base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:
 
 CHL_2021_LAPOP %>% 
@@ -23,8 +23,10 @@ CHL_2021_LAPOP %>%
        x="Nivel de confianza", y="Frecuencia")
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
 
+
+```r
 ##A continuación hago el mismo ejercicio con la influencia percibida por chilenos de China sobre la política chilena:
 
 CHL_2021_LAPOP %>% 
@@ -36,8 +38,10 @@ CHL_2021_LAPOP %>%
        x="Nivel de influencia", y="Frecuencia")
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
 
+
+```r
 ## Repito lo mismo con la percepción de esta influencia:
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(ccch6))) +
@@ -47,3 +51,5 @@ CHL_2021_LAPOP %>%
   labs(title = "Y pensando en China y la influencia que tiene en la política de Chile. ¿Cree usted que esa influencia es...",
        x="Percepción de la influencia en política", y="Frecuencia")
 ```
+
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png)
