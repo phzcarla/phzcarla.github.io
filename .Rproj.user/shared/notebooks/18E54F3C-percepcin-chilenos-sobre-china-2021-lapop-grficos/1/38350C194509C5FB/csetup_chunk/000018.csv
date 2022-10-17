@@ -1,0 +1,16 @@
+"0","## En base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:"
+"0",""
+"0","ggplot(aes(x=as_factor(mil10a))) +"
+"0","  "
+"0","  geom_bar(color=""#1d3557"",fill=""#457b9d"",alpha=0.5)+"
+"0","  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+"
+"0","  labs(title = ""El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?"","
+"0","       x=""Nivel de confianza"", y=""Frecuencia"")"
+"1","[1m[33mError[39m in `fortify()`:[22m
+[33m![39m `data` must be a data frame, or other object coercible by `fortify()`, not an S3 object with class uneval.
+Did you accidentally pass `aes()` to the `data` argument?
+Backtrace:
+[90m 1. [39mggplot2::ggplot(aes(x = as_factor(mil10a)))
+[90m 2. [39mggplot2:::ggplot.default(aes(x = as_factor(mil10a)))
+[90m 4. [39m[1m[94mggplot2:::fortify.default([39m[22mdata, ...[1m[94m)[39m[22m
+"
