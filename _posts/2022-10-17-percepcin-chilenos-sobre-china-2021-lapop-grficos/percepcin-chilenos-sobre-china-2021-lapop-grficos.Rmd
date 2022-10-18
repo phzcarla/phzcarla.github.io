@@ -10,7 +10,6 @@ output:
     self_contained: false
 ---
 
-
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 ## En base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:
 library("stringr")   

@@ -1,0 +1,40 @@
+---
+title: "Scatterplot, Percepcion China-Chile/EEUU-Chile"
+description: |
+  A short description of the post.
+author:
+  - name: Carla Puentes
+    url: {}
+date: 2022-10-18
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+# Scatterplot: Para la visualización de la correlación entre dos variables. En este caso, quiero evaluar la correlación entre la confianza de los chilenos en el gobierno chino y el gobierno estadounidense.
+
+# Las variables acá son (1) MIL10A El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión? y (2)MIL10E El gobierno de Estados Unidos. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?
+
+# En primer lugar cargo las libraries que necesito
+
+library(tidyverse)
+library(sjmisc)
+library(kableExtra)
+library(dplyr)
+library(ggplot2)
+library(haven)
+
+```{r}
+knitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, 
+                      comment=NA, cache=T, R.options=list(width=220), 
+                      fig.align='center', out.width='75%', fig.asp=.75)
+
+ggplot (CHL_2021_LAPOP, aes(x= mil10a, y= mil10e)) + 
+  geom_point()+
+  geom_smooth(method=lm)
+
+```
+
+
+

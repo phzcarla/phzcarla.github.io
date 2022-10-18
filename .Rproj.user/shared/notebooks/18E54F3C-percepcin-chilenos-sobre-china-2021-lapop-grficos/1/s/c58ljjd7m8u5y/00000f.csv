@@ -1,8 +1,0 @@
-"0","## Repito lo mismo con la percepción de esta influencia:"
-"0","CHL_2021_LAPOP %>% "
-"0","  ggplot(aes(x=as_factor(ccch6))) +"
-"0","  "
-"0","  geom_bar(color=""#1d3557"",fill=""#457b9d"",alpha=0.5)+"
-"0","  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+"
-"0","  labs(title = ""Y pensando en China y la influencia que tiene en la política de Chile. ¿Cree usted que esa influencia es..."","
-"0","       x=""Percepción de la influencia en política"", y=""Frecuencia"")"
