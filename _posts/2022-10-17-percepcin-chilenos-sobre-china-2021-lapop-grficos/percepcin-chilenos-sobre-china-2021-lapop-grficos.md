@@ -23,7 +23,7 @@ CHL_2021_LAPOP %>%
        x="Nivel de confianza", y="Frecuencia")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 
 ```r
@@ -38,7 +38,7 @@ CHL_2021_LAPOP %>%
        x="Nivel de influencia", y="Frecuencia")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
 
 
 ```r
@@ -52,4 +52,4 @@ CHL_2021_LAPOP %>%
        x="Percepción de la influencia en política", y="Frecuencia")
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
