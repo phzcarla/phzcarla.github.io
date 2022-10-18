@@ -10,8 +10,13 @@ output:
     self_contained: false
 ---
 
+
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 ## En base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:
+library("stringr")   
+library(haven)
+library(ggplot2)
+library(dplyr)
 
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(mil10a))) +
@@ -26,6 +31,10 @@ CHL_2021_LAPOP %>%
 
 ##A continuación hago el mismo ejercicio con la influencia percibida por chilenos de China sobre la política chilena:
 
+library("stringr")   
+library(haven)
+library(ggplot2)
+library(dplyr)
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(ccch4))) +
   
@@ -38,6 +47,11 @@ CHL_2021_LAPOP %>%
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 
 ## Repito lo mismo con la percepción de esta influencia:
+library("stringr")   
+library(haven)
+library(ggplot2)
+library(dplyr)
+
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(ccch6))) +
   
