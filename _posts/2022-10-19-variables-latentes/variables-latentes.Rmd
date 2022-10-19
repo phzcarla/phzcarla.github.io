@@ -1,0 +1,27 @@
+---
+title: "Variables latentes"
+description: |
+  A short description of the post.
+author:
+  - name: Carla Puentes
+    url: {}
+date: 2022-10-19
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+Las variables son latentes cuando no hay muestra observada para algunos o varios valores de la muestra.
+
+En el caso de mi pregunta de investigación, sobre la percepción de los chilenos sobre China, hay distintas conductas que podrían significar la percepción:
+
+- Sistema político chino.
+- Diplomacia china.
+- Rol de china en el sistema internacional.
+- Conocimiento del conflicto territorial y político China-Taiwán.
+- Percepción de Xi Jinping como líder político.
+
+Una de las mayores lecciones que obtuve al realizar este ejercicio fue la necesidad de reducir mi pregunta al aspecto político/diplomático, especialmente considerando la relevancia del factor del conflicto China-Taiwán.
+
+
