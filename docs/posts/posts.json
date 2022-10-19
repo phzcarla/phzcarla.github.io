@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-10-19-variables-latentes/",
+    "title": "Variables latentes",
+    "description": {},
+    "author": [
+      {
+        "name": "Carla Puentes",
+        "url": {}
+      }
+    ],
+    "date": "2022-10-15",
+    "categories": [],
+    "contents": "\r\nLas variables son latentes cuando no hay muestra observada para algunos o varios valores de la muestra.\r\nEn el caso de mi pregunta de investigación, sobre la percepción de los chilenos sobre China, hay distintas conductas que podrían significar la percepción:\r\nSistema político chino.\r\nDiplomacia china.\r\nRol de china en el sistema internacional.\r\nConocimiento del conflicto territorial y político China-Taiwán.\r\nPercepción de Xi Jinping como líder político.\r\nUna de las mayores lecciones que obtuve al realizar este ejercicio fue la necesidad de reducir mi pregunta al aspecto político/diplomático, especialmente considerando la relevancia del factor del conflicto China-Taiwán.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-10-19T03:40:39+00:00",
+    "input_file": "variables-latentes.knit.md"
+  },
+  {
     "path": "posts/2022-09-15-tarea-1/",
     "title": "Tarea 1",
     "description": "Tarea 1.",

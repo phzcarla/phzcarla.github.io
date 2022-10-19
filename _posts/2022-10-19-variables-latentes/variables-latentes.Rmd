@@ -1,11 +1,10 @@
 ---
 title: "Variables latentes"
-description: |
-  A short description of the post.
+description:
 author:
   - name: Carla Puentes
     url: {}
-date: 2022-10-19
+date: 2022-10-15
 output:
   distill::distill_article:
     self_contained: false
