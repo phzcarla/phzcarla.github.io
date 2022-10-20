@@ -1,0 +1,69 @@
+---
+title: "Ejercicios con rtweet"
+description: 
+author:
+  - name: Carla Puentes
+    url: {}
+date: 2022-10-19
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+En este post realizaré algunos ejercicios con la librería rtweet en base al Capítulo 12 del libro AnalizaR Datos Políticos.
+
+Con Rtweet puedo acceder gratuitamente al API de Twitter, obteniendo no tan solo tweets y retweets (con un tope de 1,000), sino también información sobre usuarios.
+
+En primer lugar, voy a explorar qué usuarios están twitteando sobre China y Chile:
+
+
+```{r users, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+users <- search_users("#china and #chile",
+                      n = 1000)
+
+#Y visualizo la información de esta forma:
+head(users, n = 500)
+
+#Para evaluar también de dónde son estos usuarios, bajo el sesgo de que no todas las personas comparten información fidedigna sobre su ubicación en redes sociales:
+length(unique(users$location))
+
+users %>%
+  count(location, sort = T) %>%
+  mutate(location = reorder(location,n)) %>%
+  na.omit() %>% filter(location != "") %>% 
+  top_n(20) %>%
+  ggplot(aes(x = location,y = n)) +
+  geom_col() +
+  coord_flip() +
+      labs(x = "Ubicación",
+      y = "Frecuencia",
+      title = "Usuarios de Twitter - Ubicaciones únicas")
+```
+También puedo realizar este ejercicio con tweets que mencionen a China:
+
+```{r tweets, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+rt_china <- search_tweets(
+  "#china", n = 1000, include_rts = FALSE)
+
+#Información con la cual puedo examinar la tendencia temporal de estos tweets:
+
+rt_china %>%
+  ts_plot("5 minutes") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
+  ggplot2::labs(
+    x = NULL, y = NULL,
+    title = "Frecuencia de #China en los tweets de los últimos 3 días",
+    subtitle = "",
+    caption = "Fuente: Datos recolectados desde la API de Twitter, usando el paquete rtweet"
+  )
+```
+
+
+
+
+
