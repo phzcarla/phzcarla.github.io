@@ -17,9 +17,9 @@ Con Rtweet puedo acceder gratuitamente al API de Twitter, obteniendo no tan solo
 En primer lugar, voy a explorar qué usuarios están twitteando sobre China y Chile:
 
 
-```{r users, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
+```{r users, include=TRUE}
+library(rtweet)
+library(tidyverse)
 users <- search_users("#china and #chile",
                       n = 1000)
 
@@ -43,8 +43,7 @@ users %>%
 ```
 También puedo realizar este ejercicio con tweets que mencionen a China:
 
-```{r tweets, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r tweets, include=TRUE}
 
 rt_china <- search_tweets(
   "#china", n = 1000, include_rts = FALSE)

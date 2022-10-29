@@ -18,6 +18,11 @@ En primer lugar, voy a explorar qué usuarios están twitteando sobre China y Ch
 
 
 
+También puedo realizar este ejercicio con tweets que mencionen a China:
+
+
+
+
 
 
 
