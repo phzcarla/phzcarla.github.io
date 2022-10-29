@@ -191,3 +191,22 @@ CL_LAPOP_2021 %>%
   labs(title = "Figura 4 Gráfico de barras '2021, respuestas a la pregunta: El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?'",
        x="Confianza", y="Frecuencia")
 ```
+Modelos de regresión:
+
+Modelo simple. # VI: mil10b y VD: mil10a
+¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
+
+```{r}
+modelo_simple <- lm (mil10a ~ 1 + mil10b, data = CL_LAPOP_2021, na.action = na.exclude)
+summary(modelo_simple)
+
+#Se observa una relación positiva entre la confianza del gobierno de Estados Unidos y la confianza en el gobierno Chino, mientras más confianza tienen las personas en el gobierno de Estados Unidos, menos confianza tienen en el gobierno Chino.
+
+CL_LAPOP_2021%>%
+  ggplot(aes(x = mil10b, y = mil10a)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = T, color = "#ed6a5a") +
+  labs(x = "Confianza en Estados Unidos", y = "Confianza en China")
+ 
+```
+
