@@ -63,18 +63,8 @@ knit2html("CL_LAPOP_2014.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2014.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2014.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -82,20 +72,20 @@ CL_LAPOP_2014 %>% select(mil10a)
 ```
 
 ```
-## # A tibble: 1,571 × 1
-##    mil10a                
-##    <dbl+lbl>             
-##  1 NA(a) [No Sabe]       
-##  2     3 [Poco confiable]
-##  3     4 [Nada confiable]
-##  4 NA(a) [No Sabe]       
-##  5     2 [Algo confiable]
-##  6 NA(a) [No Sabe]       
-##  7     4 [Nada confiable]
-##  8     2 [Algo confiable]
-##  9     1 [Muy confiable] 
-## 10     3 [Poco confiable]
-## # … with 1,561 more rows
+# A tibble: 1,571 × 1
+   mil10a                
+   <dbl+lbl>             
+ 1 NA(a) [No Sabe]       
+ 2     3 [Poco confiable]
+ 3     4 [Nada confiable]
+ 4 NA(a) [No Sabe]       
+ 5     2 [Algo confiable]
+ 6 NA(a) [No Sabe]       
+ 7     4 [Nada confiable]
+ 8     2 [Algo confiable]
+ 9     1 [Muy confiable] 
+10     3 [Poco confiable]
+# … with 1,561 more rows
 ```
 
 ```r
@@ -104,17 +94,17 @@ range(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## <labelled<double>[2]>: Confiabilidad del gobierno chino
-## [1] 1 4
-## 
-## Labels:
-##  value          label
-##      1  Muy confiable
-##      2 Algo confiable
-##      3 Poco confiable
-##      4 Nada confiable
-##  NA(a)        No Sabe
-##  NA(b)    No Responde
+<labelled<double>[2]>: Confiabilidad del gobierno chino
+[1] 1 4
+
+Labels:
+ value          label
+     1  Muy confiable
+     2 Algo confiable
+     3 Poco confiable
+     4 Nada confiable
+ NA(a)        No Sabe
+ NA(b)    No Responde
 ```
 
 ```r
@@ -123,7 +113,7 @@ mean(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2.644884
+[1] 2.644884
 ```
 
 ```r
@@ -132,7 +122,7 @@ median(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2
+[1] 2
 ```
 
 ```r
@@ -141,7 +131,7 @@ IQR(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 1
+[1] 1
 ```
 
 ```r
@@ -150,7 +140,7 @@ var(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.7937496
+[1] 0.7937496
 ```
 
 ```r
@@ -159,7 +149,7 @@ sd(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.8909263
+[1] 0.8909263
 ```
 
 **Gráficos descriptivos: Confianza en China, año 2014.**
@@ -171,18 +161,8 @@ knit2html("CL_LAPOP_2014.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2014.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2014.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -195,7 +175,7 @@ CL_LAPOP_2014 %>%
        x="Confianza", y="Frecuencia")
 ```
 
-![plot of chunk gráficos descriptivos 2014](figure/gráficos descriptivos 2014-1.png)
+<img src="figure/gráficos descriptivos 2014-1.png" alt="plot of chunk gráficos descriptivos 2014" width="75%" style="display: block; margin: auto;" />
 
 **Análisis descriptivo 2018:**
 
@@ -205,18 +185,8 @@ knit2html("CL_LAPOP_2018.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2018.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2018.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -225,20 +195,20 @@ CL_LAPOP_2018 %>%
 ```
 
 ```
-## # A tibble: 1,625 × 1
-##    mil10a                      
-##    <dbl+lbl>                   
-##  1 NA(a) [Don't Know]          
-##  2     3 [Not Very Trustworthy]
-##  3 NA(a) [Don't Know]          
-##  4 NA(a) [Don't Know]          
-##  5 NA(a) [Don't Know]          
-##  6     2 [Somewhat Trustworthy]
-##  7 NA(a) [Don't Know]          
-##  8     3 [Not Very Trustworthy]
-##  9 NA(a) [Don't Know]          
-## 10     2 [Somewhat Trustworthy]
-## # … with 1,615 more rows
+# A tibble: 1,625 × 1
+   mil10a                      
+   <dbl+lbl>                   
+ 1 NA(a) [Don't Know]          
+ 2     3 [Not Very Trustworthy]
+ 3 NA(a) [Don't Know]          
+ 4 NA(a) [Don't Know]          
+ 5 NA(a) [Don't Know]          
+ 6     2 [Somewhat Trustworthy]
+ 7 NA(a) [Don't Know]          
+ 8     3 [Not Very Trustworthy]
+ 9 NA(a) [Don't Know]          
+10     2 [Somewhat Trustworthy]
+# … with 1,615 more rows
 ```
 
 ```r
@@ -247,18 +217,18 @@ range(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## <labelled<double>[2]>: Trustworthiness of Chinese Government
-## [1] 1 4
-## 
-## Labels:
-##  value                label
-##      1     Very Trustworthy
-##      2 Somewhat Trustworthy
-##      3 Not Very Trustworthy
-##      4        Untrustworthy
-##  NA(a)           Don't Know
-##  NA(b)          No Response
-##  NA(c)       Not Applicable
+<labelled<double>[2]>: Trustworthiness of Chinese Government
+[1] 1 4
+
+Labels:
+ value                label
+     1     Very Trustworthy
+     2 Somewhat Trustworthy
+     3 Not Very Trustworthy
+     4        Untrustworthy
+ NA(a)           Don't Know
+ NA(b)          No Response
+ NA(c)       Not Applicable
 ```
 
 ```r
@@ -267,7 +237,7 @@ mean(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2.594306
+[1] 2.594306
 ```
 
 ```r
@@ -276,7 +246,7 @@ median(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2
+[1] 2
 ```
 
 ```r
@@ -285,7 +255,7 @@ IQR(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 1
+[1] 1
 ```
 
 ```r
@@ -294,7 +264,7 @@ var(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.7853357
+[1] 0.7853357
 ```
 
 ```r
@@ -303,7 +273,7 @@ sd(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.8861917
+[1] 0.8861917
 ```
 
 **Gráficos descriptivos: Confianza en China, año 2014.**
@@ -314,18 +284,8 @@ knit2html("CL_LAPOP_2018.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2018.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2018.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -338,7 +298,7 @@ CL_LAPOP_2018 %>%
        x="Confianza", y="Frecuencia")
 ```
 
-![plot of chunk gráficos descriptivos 2018](figure/gráficos descriptivos 2018-1.png)
+<img src="figure/gráficos descriptivos 2018-1.png" alt="plot of chunk gráficos descriptivos 2018" width="75%" style="display: block; margin: auto;" />
 
 **Análisis descriptivo 2019:**
 
@@ -348,18 +308,8 @@ knit2html("CL_LAPOP_2019.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2019.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2019.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -368,20 +318,20 @@ CL_LAPOP_2019 %>%
 ```
 
 ```
-## # A tibble: 1,638 × 1
-##    mil10a           
-##    <dbl+lbl>        
-##  1 NA(c) [No Aplica]
-##  2 NA(c) [No Aplica]
-##  3 NA(a) [No sabe]  
-##  4 NA(a) [No sabe]  
-##  5 NA(a) [No sabe]  
-##  6 NA(c) [No Aplica]
-##  7 NA(c) [No Aplica]
-##  8 NA(c) [No Aplica]
-##  9 NA(c) [No Aplica]
-## 10 NA(a) [No sabe]  
-## # … with 1,628 more rows
+# A tibble: 1,638 × 1
+   mil10a           
+   <dbl+lbl>        
+ 1 NA(c) [No Aplica]
+ 2 NA(c) [No Aplica]
+ 3 NA(a) [No sabe]  
+ 4 NA(a) [No sabe]  
+ 5 NA(a) [No sabe]  
+ 6 NA(c) [No Aplica]
+ 7 NA(c) [No Aplica]
+ 8 NA(c) [No Aplica]
+ 9 NA(c) [No Aplica]
+10 NA(a) [No sabe]  
+# … with 1,628 more rows
 ```
 
 ```r
@@ -390,18 +340,18 @@ range(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## <labelled<double>[2]>: Confiabilidad del gobierno chino
-## [1] 1 4
-## 
-## Labels:
-##  value          label
-##      1  Muy confiable
-##      2 Algo confiable
-##      3 Poco confiable
-##      4 Nada confiable
-##  NA(a)        No sabe
-##  NA(b)    No responde
-##  NA(c)      No Aplica
+<labelled<double>[2]>: Confiabilidad del gobierno chino
+[1] 1 4
+
+Labels:
+ value          label
+     1  Muy confiable
+     2 Algo confiable
+     3 Poco confiable
+     4 Nada confiable
+ NA(a)        No sabe
+ NA(b)    No responde
+ NA(c)      No Aplica
 ```
 
 ```r
@@ -410,7 +360,7 @@ mean(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2.754673
+[1] 2.754673
 ```
 
 ```r
@@ -419,7 +369,7 @@ median(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 3
+[1] 3
 ```
 
 ```r
@@ -428,7 +378,7 @@ IQR(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2
+[1] 2
 ```
 
 ```r
@@ -437,7 +387,7 @@ var(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.9958798
+[1] 0.9958798
 ```
 
 ```r
@@ -446,7 +396,7 @@ sd(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.9979377
+[1] 0.9979377
 ```
 
 **Gráficos descriptivos: Confianza en China, año 2019.**
@@ -457,18 +407,8 @@ knit2html("CL_LAPOP_2019.dta")
 ```
 
 ```
-## 
-## 
-## processing file: CL_LAPOP_2019.dta
-```
-
-```
-##   |                                                                                           |                                                                                   |   0%  |                                                                                           |...................................................................................| 100%
-##   ordinary text without R code
-```
-
-```
-## output file: CL_LAPOP_2019.txt
+  |                                                                                                                                                                                                                          |                                                                                                                                                                                                                  |   0%  |                                                                                                                                                                                                                          |..................................................................................................................................................................................................................| 100%
+  ordinary text without R code
 ```
 
 ```r
@@ -481,7 +421,7 @@ CL_LAPOP_2019 %>%
        x="Confianza", y="Frecuencia")
 ```
 
-![plot of chunk gráficos descriptivos 2019](figure/gráficos descriptivos 2019-1.png)
+<img src="figure/gráficos descriptivos 2019-1.png" alt="plot of chunk gráficos descriptivos 2019" width="75%" style="display: block; margin: auto;" />
 
 **Análisis descriptivo 2021:**
 
@@ -493,20 +433,20 @@ CL_LAPOP_2021 %>%
 ```
 
 ```
-## # A tibble: 1,571 × 1
-##    mil10a                
-##    <dbl+lbl>             
-##  1 NA(c) [N/A]           
-##  2 NA(c) [N/A]           
-##  3     2 [Algo confiable]
-##  4     3 [Poco confiable]
-##  5 NA(c) [N/A]           
-##  6 NA(c) [N/A]           
-##  7 NA(c) [N/A]           
-##  8 NA(c) [N/A]           
-##  9 NA(c) [N/A]           
-## 10 NA(a) [DK]            
-## # … with 1,561 more rows
+# A tibble: 1,571 × 1
+   mil10a                
+   <dbl+lbl>             
+ 1 NA(c) [N/A]           
+ 2 NA(c) [N/A]           
+ 3     2 [Algo confiable]
+ 4     3 [Poco confiable]
+ 5 NA(c) [N/A]           
+ 6 NA(c) [N/A]           
+ 7 NA(c) [N/A]           
+ 8 NA(c) [N/A]           
+ 9 NA(c) [N/A]           
+10 NA(a) [DK]            
+# … with 1,561 more rows
 ```
 
 ```r
@@ -515,21 +455,21 @@ range(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## <labelled<double>[2]>: MIL10A El gobierno de China, en su opinión ¿es muy confiable, algo confiable, po
-## [1] 1 4
-## 
-## Labels:
-##  value                      label
-##      1              Muy confiable
-##      2             Algo confiable
-##      3             Poco confiable
-##      4             Nada confiable
-##     88 No sabe / no tiene opinión
-##     98                         NR
-##     99                       INAP
-##  NA(a)                         DK
-##  NA(b)                         NR
-##  NA(c)                        N/A
+<labelled<double>[2]>: MIL10A El gobierno de China, en su opinión ¿es muy confiable, algo confiable, po
+[1] 1 4
+
+Labels:
+ value                      label
+     1              Muy confiable
+     2             Algo confiable
+     3             Poco confiable
+     4             Nada confiable
+    88 No sabe / no tiene opinión
+    98                         NR
+    99                       INAP
+ NA(a)                         DK
+ NA(b)                         NR
+ NA(c)                        N/A
 ```
 
 ```r
@@ -538,7 +478,7 @@ mean(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2.409336
+[1] 2.409336
 ```
 
 ```r
@@ -547,7 +487,7 @@ median(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 2
+[1] 2
 ```
 
 ```r
@@ -556,7 +496,7 @@ IQR(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 1
+[1] 1
 ```
 
 ```r
@@ -565,7 +505,7 @@ var(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.6271069
+[1] 0.6271069
 ```
 
 ```r
@@ -574,7 +514,7 @@ sd(CL_LAPOP_2021$mil10a, na.rm = TRUE)
 ```
 
 ```
-## [1] 0.7919008
+[1] 0.7919008
 ```
 
 **Gráficos descriptivos: Confianza en China, año 2021.**
@@ -590,4 +530,4 @@ CL_LAPOP_2021 %>%
        x="Confianza", y="Frecuencia")
 ```
 
-![plot of chunk gráficos descriptivos 2021](figure/gráficos descriptivos 2021-1.png)
+<img src="figure/gráficos descriptivos 2021-1.png" alt="plot of chunk gráficos descriptivos 2021" width="75%" style="display: block; margin: auto;" />
