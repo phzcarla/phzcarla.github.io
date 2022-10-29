@@ -191,10 +191,11 @@ CL_LAPOP_2021 %>%
   labs(title = "Figura 4 Gráfico de barras '2021, respuestas a la pregunta: El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?'",
        x="Confianza", y="Frecuencia")
 ```
+
 Modelos de regresión:
 
-Modelo simple. # VI: mil10b y VD: mil10a
-¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
+Modelo simple.
+# VI: mil10b y VD: mil10a ¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
 
 ```{r}
 modelo_simple <- lm (mil10a ~ 1 + mil10b, data = CL_LAPOP_2021, na.action = na.exclude)
