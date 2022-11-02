@@ -3,24 +3,21 @@ title: "Entrega 1: Proyecto Final"
 description: 
 author:
   - name: Carla Puentes
-    url: {}
+    url: https://phzcarla.github.io
 date: 2022-10-27
+preview: images/preview.png
 output:
   distill::distill_article:
     self_contained: false
-editor_options: 
-  markdown: 
-    wrap: sentence
+editor_options:
+  chunk_output_type: console
 ---
 
 ### **Hipótesis y variables de interés:**
 
-En mi proyecto para la clase busco evaluar si las relaciones diplomáticas entre entre China y Estados Unidos en la última decada ha tenido o no un efecto en la confianza de los chilenos en China.
-Preguntas clase: ¿Ha afectado el conflicto a la percepción del país en Chile?
-¿Es suficiente el soft power ejercido por China para ¿Es suficiente el soft power para sobreponerse a los impactos que tiene el conflicto diplomático entre dos grandes potencias económicas y políticas?
+En mi proyecto para la clase busco evaluar si las relaciones diplomáticas entre entre China y Estados Unidos en la última decada ha tenido o no un efecto en la confianza de los chilenos en China. Preguntas clase: ¿Ha afectado el conflicto a la percepción del país en Chile? ¿Es suficiente el soft power ejercido por China para ¿Es suficiente el soft power para sobreponerse a los impactos que tiene el conflicto diplomático entre dos grandes potencias económicas y políticas?
 
-Hipótesis: La existencia de conflictos entre Estados Unidos y China afectan la confianza de los chilenos en el gobierno chino.
-correspondiente a tensiones internacionales en las que se ve envuelto este?
+Hipótesis: La existencia de conflictos entre Estados Unidos y China afectan la confianza de los chilenos en el gobierno chino. correspondiente a tensiones internacionales en las que se ve envuelto este?
 
 **H0:** *No existe una relación entre la existencia de tensiones diplomáticas entre China-Taiwán-Estados Unidos y la confianza de los chilenos en gobierno chino.*
 
@@ -32,25 +29,15 @@ correspondiente a tensiones internacionales en las que se ve envuelto este?
 
 ### **Revisión de literatura:**
 
-La estrategia china de ""Going-Out"" ha tomado especial protagonismo en la última década en Latinoamérica, presentándose como una alternativa a la presencia dominante de Estados Unidos.
-La teoría de estabilidad hegemónica de Krasner indica que para que haya un sistema económico de libre comercio estable, debe existir una potencia hegemónica, y el ascenso de un hegemón permite una mayor apertura de los países a verse envueltos en intercambios comerciales con Tratados de Libre Comercio, bajas en las tarifas, etc.
-Si bien el ""China Triangle"" (Gallagher) demuestra que China entró fuertemente a países donde la influencia de Estados Unidos era menor, el desembarco en América Latina ya lleva alrededor de una década, y en Chile se han realizado grandes inversiones en el sector energético, minero y petrolero.
-El ascenso de China como socio comercial predominante en América Latina se presenta como una amenaza para Estados Unidos, país con el que desde el 2018 sostiene una guerra comercial, sumada a tensiones diplomáticas debido a la constante amenaza de China a Taiwán.
+La estrategia china de ""Going-Out"" ha tomado especial protagonismo en la última década en Latinoamérica, presentándose como una alternativa a la presencia dominante de Estados Unidos. La teoría de estabilidad hegemónica de Krasner indica que para que haya un sistema económico de libre comercio estable, debe existir una potencia hegemónica, y el ascenso de un hegemón permite una mayor apertura de los países a verse envueltos en intercambios comerciales con Tratados de Libre Comercio, bajas en las tarifas, etc. Si bien el ""China Triangle"" (Gallagher) demuestra que China entró fuertemente a países donde la influencia de Estados Unidos era menor, el desembarco en América Latina ya lleva alrededor de una década, y en Chile se han realizado grandes inversiones en el sector energético, minero y petrolero. El ascenso de China como socio comercial predominante en América Latina se presenta como una amenaza para Estados Unidos, país con el que desde el 2018 sostiene una guerra comercial, sumada a tensiones diplomáticas debido a la constante amenaza de China a Taiwán.
 
-En el caso chileno, las relaciones bilaterales han sido usualmente separadas completamente con respecto al rol político de China y su rol económico, pero no contamos con una evaluación de si la estrategia diplomática de China de los últimos años, y los conflictos en los que se ha visto envuelto el país han impactado también en la confianza que tienen los chilenos en China como gobierno.
-En la literatura existe una discusión constante sobre la imagen global de China, y si su estrategia de "Going-Out" con un acercamiento económico a países en África, Asia y América ha realmente aventajado al país a pesar de los conflictos diplomáticos en los que se han visto envueltos en los últimos cinco años.
-Silver (2021) indica que es el liderazgo de Xi el que ha empeorado la imagen global de China en comparación a un reciente ascenso de la imagen de Estados Unidos tras la elección de Joe Biden como presidente, ya que la percepción de este último país había bajado significativamente cuando Donald Trump lideró el país.
+En el caso chileno, las relaciones bilaterales han sido usualmente separadas completamente con respecto al rol político de China y su rol económico, pero no contamos con una evaluación de si la estrategia diplomática de China de los últimos años, y los conflictos en los que se ha visto envuelto el país han impactado también en la confianza que tienen los chilenos en China como gobierno. En la literatura existe una discusión constante sobre la imagen global de China, y si su estrategia de "Going-Out" con un acercamiento económico a países en África, Asia y América ha realmente aventajado al país a pesar de los conflictos diplomáticos en los que se han visto envueltos en los últimos cinco años. Silver (2021) indica que es el liderazgo de Xi el que ha empeorado la imagen global de China en comparación a un reciente ascenso de la imagen de Estados Unidos tras la elección de Joe Biden como presidente, ya que la percepción de este último país había bajado significativamente cuando Donald Trump lideró el país.
 
-Con respecto al rol económico de China, la encuesta realizada por el Pew Research Center (2021) indica que ""alrededor de la mitad (de países participantes en la encuesta) dicen que es más importante para sus naciones tener lazos económicos fuertes con Estados Unidos que con China"" (2021).
-Una idea similar expresa Armony y Velásquez (2015), quienes a través del análisis de comunidades latinoamericanas, indican que si bien el tema económico ha tomado relevancia en cuanto a la relación de China con Latinoamérica, muchas personas también expresaban preocupación sobre los términos de ese acercamiento.
-Este temor se expresaba especialmente en materias de impacto ambiental y la ""sed creciente de China de bienes de consumo (2015), lo que seguiría una tendencia extractivista en la región.
-Al explicar por qué la imagen de China estaría empeorando, Kurlantzick (2022) indica que también el manejo de algunas de las iniciativas del Belt and Road Initiative han elicitado respuestas negativas debido a que algunos países están acumulando más deuda de la que tenían esperada.
-Otro aspecto que impactó fue también el manejo inicial de la pandemia COVID-19, que generó desconfianza en el gobierno chino (2022).
+Con respecto al rol económico de China, la encuesta realizada por el Pew Research Center (2021) indica que ""alrededor de la mitad (de países participantes en la encuesta) dicen que es más importante para sus naciones tener lazos económicos fuertes con Estados Unidos que con China"" (2021). Una idea similar expresa Armony y Velásquez (2015), quienes a través del análisis de comunidades latinoamericanas, indican que si bien el tema económico ha tomado relevancia en cuanto a la relación de China con Latinoamérica, muchas personas también expresaban preocupación sobre los términos de ese acercamiento. Este temor se expresaba especialmente en materias de impacto ambiental y la ""sed creciente de China de bienes de consumo (2015), lo que seguiría una tendencia extractivista en la región. Al explicar por qué la imagen de China estaría empeorando, Kurlantzick (2022) indica que también el manejo de algunas de las iniciativas del Belt and Road Initiative han elicitado respuestas negativas debido a que algunos países están acumulando más deuda de la que tenían esperada. Otro aspecto que impactó fue también el manejo inicial de la pandemia COVID-19, que generó desconfianza en el gobierno chino (2022).
 
-**Análisis descriptivo de los datos de la encuesta LAPOP para Chile 2014**.
+### **Análisis descriptivo de los datos de la encuesta LAPOP para Chile 2014**.
 
-Pregunta MIL10A: El gobierno de China.
-En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?
+Pregunta MIL10A: El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?
 
 ```{r análisis descriptivo 2014, include=TRUE}
 
@@ -76,7 +63,7 @@ var(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 sd(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 ```
 
-**Gráficos descriptivos: Confianza en China, año 2014.**
+### **Gráficos descriptivos: Confianza en China, año 2014.**
 
 ```{r gráficos descriptivos 2014, echo=TRUE}
 library(dplyr)
@@ -192,10 +179,9 @@ CL_LAPOP_2021 %>%
        x="Confianza", y="Frecuencia")
 ```
 
-Modelos de regresión:
+### Modelos de regresión:
 
-Modelo simple.
-# VI: mil10b y VD: mil10a ¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
+Modelo simple. \# VI: mil10b y VD: mil10a ¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
 
 ```{r}
 modelo_simple <- lm (mil10a ~ 1 + mil10b, data = CL_LAPOP_2021, na.action = na.exclude)
@@ -210,4 +196,3 @@ CL_LAPOP_2021%>%
   labs(x = "Confianza en Estados Unidos", y = "Confianza en China")
  
 ```
-

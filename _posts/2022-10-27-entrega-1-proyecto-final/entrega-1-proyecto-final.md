@@ -47,7 +47,7 @@ Este temor se expresaba especialmente en materias de impacto ambiental y la ""se
 Al explicar por qué la imagen de China estaría empeorando, Kurlantzick (2022) indica que también el manejo de algunas de las iniciativas del Belt and Road Initiative han elicitado respuestas negativas debido a que algunos países están acumulando más deuda de la que tenían esperada.
 Otro aspecto que impactó fue también el manejo inicial de la pandemia COVID-19, que generó desconfianza en el gobierno chino (2022).
 
-**Análisis descriptivo de los datos de la encuesta LAPOP para Chile 2014**.
+### **Análisis descriptivo de los datos de la encuesta LAPOP para Chile 2014**.
 
 Pregunta MIL10A: El gobierno de China.
 En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?
@@ -152,7 +152,7 @@ sd(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 [1] 0.8909263
 ```
 
-**Gráficos descriptivos: Confianza en China, año 2014.**
+### **Gráficos descriptivos: Confianza en China, año 2014.**
 
 
 ```r
@@ -531,3 +531,48 @@ CL_LAPOP_2021 %>%
 ```
 
 <img src="figure/gráficos descriptivos 2021-1.png" alt="plot of chunk gráficos descriptivos 2021" width="75%" style="display: block; margin: auto;" />
+
+### Modelos de regresión:
+
+Modelo simple.
+# VI: mil10b y VD: mil10a ¿Cuánto de la confianza de los chilenos de China está afectado por la percepción de los chilenos sobre Estados Unidos?
+
+
+```r
+modelo_simple <- lm (mil10a ~ 1 + mil10b, data = CL_LAPOP_2021, na.action = na.exclude)
+summary(modelo_simple)
+```
+
+```
+
+Call:
+lm(formula = mil10a ~ 1 + mil10b, data = CL_LAPOP_2021, na.action = na.exclude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.99587 -0.53689 -0.07791  0.46311  2.38107 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.15994    0.11581   10.02   <2e-16 ***
+mil10b       0.45898    0.04018   11.42   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7108 on 471 degrees of freedom
+  (1098 observations deleted due to missingness)
+Multiple R-squared:  0.217,	Adjusted R-squared:  0.2153 
+F-statistic: 130.5 on 1 and 471 DF,  p-value: < 2.2e-16
+```
+
+```r
+#Se observa una relación positiva entre la confianza del gobierno de Estados Unidos y la confianza en el gobierno Chino, mientras más confianza tienen las personas en el gobierno de Estados Unidos, menos confianza tienen en el gobierno Chino.
+
+CL_LAPOP_2021%>%
+  ggplot(aes(x = mil10b, y = mil10a)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = T, color = "#ed6a5a") +
+  labs(x = "Confianza en Estados Unidos", y = "Confianza en China")
+```
+
+<img src="figure/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1" width="75%" style="display: block; margin: auto;" />
