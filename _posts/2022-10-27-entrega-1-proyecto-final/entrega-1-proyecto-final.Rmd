@@ -40,13 +40,13 @@ Con respecto al rol económico de China, la encuesta realizada por el Pew Resear
 Pregunta MIL10A: El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?
 
 ```{r análisis descriptivo 2014, include=TRUE}
-
+Sys.setenv(TZ='GMT')
 library(knitr)
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
-library("knitr")
-knit2html("CL_LAPOP_2014.dta")
+library(haven)
+CL_LAPOP_2014 <- read_dta("CL_LAPOP_2014.dta")
 CL_LAPOP_2014 %>% select(mil10a)
 
 # Rango
@@ -67,7 +67,6 @@ sd(CL_LAPOP_2014$mil10a, na.rm = TRUE)
 
 ```{r gráficos descriptivos 2014, echo=TRUE}
 library(dplyr)
-knit2html("CL_LAPOP_2014.dta")
 CL_LAPOP_2014 %>%
   drop_na(mil10a) %>%
   ggplot(aes(x=as_factor(mil10a))) +
@@ -81,7 +80,7 @@ CL_LAPOP_2014 %>%
 **Análisis descriptivo 2018:**
 
 ```{r análisis descriptivo 2018, include=TRUE}
-knit2html("CL_LAPOP_2018.dta")
+CL_LAPOP_2018 <- read_dta("CL_LAPOP_2018.dta")
 CL_LAPOP_2018 %>%
   select(mil10a)
 
@@ -102,7 +101,7 @@ sd(CL_LAPOP_2018$mil10a, na.rm = TRUE)
 **Gráficos descriptivos: Confianza en China, año 2014.**
 
 ```{r gráficos descriptivos 2018, echo=TRUE}
-knit2html("CL_LAPOP_2018.dta")
+CL_LAPOP_2018 <- read_dta("CL_LAPOP_2018.dta")
 CL_LAPOP_2018 %>%
   drop_na(mil10a) %>%
   ggplot(aes(x=as_factor(mil10a))) +
@@ -115,7 +114,7 @@ CL_LAPOP_2018 %>%
 **Análisis descriptivo 2019:**
 
 ```{r análisis descriptivo 2019, include=TRUE}
-knit2html("CL_LAPOP_2019.dta")
+CL_LAPOP_2019 <- read_dta("CL_LAPOP_2019.dta")
 CL_LAPOP_2019 %>%
   select(mil10a)
 
@@ -136,7 +135,6 @@ sd(CL_LAPOP_2019$mil10a, na.rm = TRUE)
 **Gráficos descriptivos: Confianza en China, año 2019.**
 
 ```{r gráficos descriptivos 2019, echo=TRUE}
-knit2html("CL_LAPOP_2019.dta")
 CL_LAPOP_2019 %>%
   drop_na(mil10a) %>%
   ggplot(aes(x=as_factor(mil10a))) +
@@ -149,7 +147,7 @@ CL_LAPOP_2019 %>%
 **Análisis descriptivo 2021:**
 
 ```{r análisis descriptivo 2021, include=TRUE}
-knitr::opts_chunk$set(echo = TRUE)
+CL_LAPOP_2021 <- read_dta("CL_LAPOP_2021.dta")
 CL_LAPOP_2021 %>%
   select(mil10a)
 

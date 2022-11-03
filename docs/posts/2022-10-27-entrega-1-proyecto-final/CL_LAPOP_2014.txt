@@ -1,5 +1,3 @@
 s
-
-
 ```{.r .distill-force-highlighting-css}
 ```
