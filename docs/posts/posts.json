@@ -17,6 +17,40 @@
     "input_file": "entrega-1-proyecto-final.knit.md"
   },
   {
+    "path": "posts/2022-10-18-scattereplot-percepcion-china-chileeeuu-chile/",
+    "title": "Scatterplot, Percepcion China-Chile/EEUU-Chile",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Carla Puentes",
+        "url": {}
+      }
+    ],
+    "date": "2022-10-18",
+    "categories": [],
+    "contents": "\r\nScatterplot: Para la visualización de la correlación entre dos variables. En este caso, quiero evaluar la correlación entre la confianza de los chilenos en el gobierno chino y el gobierno estadounidense.\r\nLas variables acá son (1) MIL10A El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión? y (2)MIL10E El gobierno de Estados Unidos. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?\r\nEn primer lugar cargo las libraries que necesito\r\nlibrary(tidyverse)\r\nlibrary(sjmisc)\r\nlibrary(kableExtra)\r\nlibrary(dplyr)\r\nlibrary(ggplot2)\r\nlibrary(haven)\r\n\r\n\r\nknitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, \r\n                      comment=NA, cache=T, R.options=list(width=220), \r\n                      fig.align='center', out.width='75%', fig.asp=.75)\r\nSys.setenv(TZ='GMT')\r\nlibrary(ggplot2)\r\nlibrary(haven)\r\nCL_LAPOP_2021 <- read_dta(\"CL_LAPOP_2021.dta\")\r\n\r\nggplot (CL_LAPOP_2021, aes(x= mil10a, y= mil10e)) + \r\n  geom_point()+\r\n  geom_smooth(method=lm)\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-10-18-scattereplot-percepcion-china-chileeeuu-chile/scattereplot-percepcion-china-chileeeuu-chile_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-11-03T03:00:47+00:00",
+    "input_file": "scattereplot-percepcion-china-chileeeuu-chile.knit.md"
+  },
+  {
+    "path": "posts/2022-10-17-percepcin-chilenos-sobre-china-2021-lapop-grficos/",
+    "title": "Percepción chilenos sobre China 2021 / LAPOP, Gráficos",
+    "description": {},
+    "author": [
+      {
+        "name": "Carla Puentes",
+        "url": {}
+      }
+    ],
+    "date": "2022-10-17",
+    "categories": [],
+    "contents": "\r\nEn base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:\r\n\r\n\r\nSys.setenv(TZ='GMT')\r\nlibrary(\"stringr\")   \r\nlibrary(haven)\r\nlibrary(ggplot2)\r\nlibrary(dplyr)\r\nlibrary(haven)\r\nCHL_2021_LAPOP <- read_dta(\"CHL_2021_LAPOP_AmericasBarometer_v1.2_w.dta\")\r\nCHL_2021_LAPOP %>% \r\n  ggplot(aes(x=as_factor(mil10a))) +\r\n  \r\n  geom_bar(color=\"#1d3557\",fill=\"#457b9d\",alpha=0.5)+\r\n  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+\r\n  labs(title = \"El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?\",\r\n       x=\"Nivel de confianza\", y=\"Frecuencia\")\r\n\r\n\r\n\r\n\r\n\r\n##A continuación hago el mismo ejercicio con la influencia percibida por chilenos de China sobre la política chilena:\r\n\r\nlibrary(\"stringr\")   \r\nlibrary(haven)\r\nlibrary(ggplot2)\r\nlibrary(dplyr)\r\nCHL_2021_LAPOP <- read_dta(\"CHL_2021_LAPOP_AmericasBarometer_v1.2_w.dta\")\r\nCHL_2021_LAPOP %>% \r\n  ggplot(aes(x=as_factor(ccch4))) +\r\n  \r\n  geom_bar(color=\"#1d3557\",fill=\"#457b9d\",alpha=0.5)+\r\n  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+\r\n  labs(title = \"¿Qué tanta influencia diría que tiene China en la política de Chile?\",\r\n       x=\"Nivel de influencia\", y=\"Frecuencia\")\r\n\r\n\r\n\r\n\r\n\r\n## Repito lo mismo con la percepción de esta influencia:\r\nlibrary(\"stringr\")   \r\nlibrary(haven)\r\nlibrary(ggplot2)\r\nlibrary(dplyr)\r\n\r\nCHL_2021_LAPOP %>% \r\n  ggplot(aes(x=as_factor(ccch6))) +\r\n  \r\n  geom_bar(color=\"#1d3557\",fill=\"#457b9d\",alpha=0.5)+\r\n  scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+\r\n  labs(title = \"Y pensando en China y la influencia que tiene en la política de Chile. ¿Cree usted que esa influencia es...\",\r\n       x=\"Percepción de la influencia en política\", y=\"Frecuencia\")\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-10-17-percepcin-chilenos-sobre-china-2021-lapop-grficos/percepcin-chilenos-sobre-china-2021-lapop-grficos_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-11-03T03:08:12+00:00",
+    "input_file": "percepcin-chilenos-sobre-china-2021-lapop-grficos.knit.md"
+  },
+  {
     "path": "posts/2022-10-19-variables-latentes/",
     "title": "Variables latentes",
     "description": {},

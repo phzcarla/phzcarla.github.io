@@ -13,11 +13,13 @@ output:
 En base a la información entregada en la encuesta 2021 de Latinobarómetro (LAPOP) se encuentra la siguiente información sobre la percepción de los chilenos en el año 2021, representada en un gráfico de barras, de forma que sea más simple visualizar la frecuencia de las respuestas:
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
+Sys.setenv(TZ='GMT')
 library("stringr")   
 library(haven)
 library(ggplot2)
 library(dplyr)
-
+library(haven)
+CHL_2021_LAPOP <- read_dta("CHL_2021_LAPOP_AmericasBarometer_v1.2_w.dta")
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(mil10a))) +
   
@@ -35,6 +37,7 @@ library("stringr")
 library(haven)
 library(ggplot2)
 library(dplyr)
+CHL_2021_LAPOP <- read_dta("CHL_2021_LAPOP_AmericasBarometer_v1.2_w.dta")
 CHL_2021_LAPOP %>% 
   ggplot(aes(x=as_factor(ccch4))) +
   

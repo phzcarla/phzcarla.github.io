@@ -29,8 +29,12 @@ library(haven)
 knitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, 
                       comment=NA, cache=T, R.options=list(width=220), 
                       fig.align='center', out.width='75%', fig.asp=.75)
+Sys.setenv(TZ='GMT')
+library(ggplot2)
+library(haven)
+CL_LAPOP_2021 <- read_dta("CL_LAPOP_2021.dta")
 
-ggplot (CHL_2021_LAPOP, aes(x= mil10a, y= mil10e)) + 
+ggplot (CL_LAPOP_2021, aes(x= mil10a, y= mil10e)) + 
   geom_point()+
   geom_smooth(method=lm)
 
