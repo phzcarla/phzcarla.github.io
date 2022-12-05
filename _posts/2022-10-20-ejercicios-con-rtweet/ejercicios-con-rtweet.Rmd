@@ -19,6 +19,7 @@ En primer lugar, voy a explorar qué usuarios están twitteando sobre China y Ch
 
 ```{r users, include=TRUE}
 library(rtweet)
+Sys.setenv(TZ='GMT')
 library(tidyverse)
 users <- search_users("#china and #chile",
                       n = 1000)

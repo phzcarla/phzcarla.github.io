@@ -194,3 +194,7 @@ CL_LAPOP_2021%>%
   labs(x = "Confianza en Estados Unidos", y = "Confianza en China")
  
 ```
+
+
+
+

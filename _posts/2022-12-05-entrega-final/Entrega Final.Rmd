@@ -1,0 +1,221 @@
+---
+title: "Entrega Final"
+author: "Carla Puentes"
+date: "2022-12-04"
+output: html_document
+---
+
+### **Confianza en China y Estados Unidos en período de Guerra Comercial, 2017-2021**
+
+##### Planteamiento de Hipótesis
+
+**Hipótesis:** Una mayor confianza de parte de los chilenos en Estados Unidos tiene un efecto en la confianza en China.
+
+-   **Variable independiente:** Nivel de confianza de los chilenos hacia Estados Unidos
+
+-   **Variable dependiente:** Nivel de confianza de los chilenos hacia China
+
+##### Revisión de literatura
+
+La estrategia china de \"Going-Out\" ha tomado especial protagonismo en la última década en Latinoamérica, presentándose como una alternativa a la presencia dominante de Estados Unidos. La teoría de estabilidad hegemónica de Krasner indica que para que haya un sistema económico de libre comercio estable, debe existir una potencia hegemónica, y el ascenso de un hegemón permite una mayor apertura de los países a verse envueltos en intercambios comerciales con Tratados de Libre Comercio, bajas en las tarifas, etc. Si bien el China Triangle (Gallagher) demuestra que China entró fuertemente a países donde la influencia de Estados Unidos era menor, el desembarco en América Latina ya lleva alrededor de una década, y en Chile se han realizado grandes inversiones en el sector energético, minero y petrolero. El ascenso de China como socio comercial predominante en América Latina se presenta como una amenaza para Estados Unidos, país con el que desde el 2018 sostiene una guerra comercial.
+
+Con respecto al rol económico de China, la encuesta realizada por el Pew Research Center (2021) indica que \"alrededor de la mitad (de países participantes en la encuesta) dicen que es más importante para sus naciones tener lazos económicos fuertes con Estados Unidos que con China\" (2021). Una idea similar expresa Armony y Velásquez (2015), quienes a través del análisis de comunidades latinoamericanas, indican que si bien el tema económico ha tomado relevancia en cuanto a la relación de China con Latinoamérica, muchas personas también expresaban preocupación sobre los términos de ese acercamiento. Este temor se expresaba especialmente en materias de impacto ambiental y la \"sed creciente de China de bienes de consumo\" (2015), lo que seguiría una tendencia extractivista en la región. Al explicar por qué la imagen de China estaría empeorando, Kurlantzick (2022) indica que también el manejo de algunas de las iniciativas del Belt and Road Initiative han elicitado respuestas negativas debido a que algunos países están acumulando más deuda de la que tenían esperada. Otro aspecto que impactó fue también el manejo inicial de la pandemia COVID-19, que generó desconfianza en el gobierno chino (2022).
+
+\
+
+Conflicto entre Estados Unidos y China
+
+En la literatura existe una discusión constante sobre la imagen global de China, y si su estrategia de \"Going-Out\" con un acercamiento económico a países en África, Asia y América ha realmente aventajado al país a pesar de los conflictos diplomáticos en los que se han visto envueltos en los últimos cinco años. Silver (2021) indica que es el liderazgo de Xi el que ha empeorado la imagen global de China en comparación a un reciente ascenso de la imagen de Estados Unidos tras la elección de Joe Biden como presidente, ya que la percepción de este último país había bajado significativamente cuando Donald Trump lideró el país. Hasta el año 2017, el entonces recién electo Presidente de Estados Unidos, Donald Trump, afirmaba que seguiría la política de "Una China"; esta política, de una clara ambigüedad estratégica, les permite mantener relaciones con China y Taiwán sin garantías de seguridad que provoquen una reacción desde Beijing, ni animando explícitamente a la creación de un movimiento independentista de Taiwán inspirado por apoyo militar de parte de Estados Unidos. El mismo año, Donald Trump recibía a Xi en Florida y aseguraba que se habían realizado grandes avances en materia de acuerdos bilaterales.
+
+El año siguiente, en 2018, comienzan a subir las tensiones bilaterales tras un alza de aranceles a productos importados desde China. Esta situación dio entonces comienzo a la "Guerra Comercial" entre ambos países con un alza de aranceles desde las dos partes, y declaraciones como la del ex Vicepresidente de Estados Unidos que indican una posición clara hacia la competencia por sobre la cooperación a través de "agresión económica". ([CFR](https://www.cfr.org/timeline/us-china-relations)) Posteriormente, en el año 2019 se llega al nivel máximo de las tensiones bilaterales, con acusaciones de parte de Estados Unidos hacia China de manipular su moneda para obtener beneficios económicos, además de la firma del [Hong Kong Human Rights and Democracy Act](https://www.congress.gov/bill/116th-congress/house-bill/3289#:~:text=Passed%20House%20(10%2F15%2F2019)) que permite sancionar a responsables de violaciones a derechos humanos en China y Hong Kong.
+
+\
+
+¿Por qué es relevante la confianza?
+
+Es relevante considerar la confianza entre estos países debido a que son la base para la negociación y elaboración de políticas bilaterales. De acuerdo a lo expresado por Farrell y Knight, la confianza es el conjunto de expectativas que tiene una parte de que la otra parte (o partes) se comportarán de forma adecuada con respecto a un tema específico ([Farrell y Knight 2003](http://www.henryfarrell.net/farrellknight.pdf)). La estrategia China con respecto a su relación con Chile ha seguido claramente la línea de establecer confianza a través de la institucionalidad "como forma de contrarrestar la percepción de riesgo e incertidumbre asociada a su creciente presencia en Latinoamérica" ([Roett y Paz 2008, en Labarca 2013](https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0718-090X2013000200004)). Esta estrategia se dio en primera instancia llegando a acuerdos formales con respecto a la relación económica de ambos países, sentando así las bases de su cooperación. También, mientras las relaciones internacionales están más interconectadas, se vuelve más importante la participación de distintos actores y pueden afectar de mayor forma estas relaciones bilaterales ([Brown 2020](https://uscpublicdiplomacy.org/blog/face-time-building-trust-international-affairs)); un ejemplo de esto son los programas de intercambio internacionales que permiten llegar a actores de todos los niveles en una sociedad, en una estrategia clara de soft power por un país.
+
+Hasta el año 2006, los chilenos tenían una buena percepción de China y su poder económico, y no existía un sentimiento anti-chino en los medios de comunicación masiva (Domínguez 2006, en Labarca 2013). En el caso chileno, las relaciones bilaterales han sido usualmente separadas completamente con respecto al rol político de China y su rol económico, pero no contamos con una evaluación de si la estrategia diplomática de China de los últimos años, y los conflictos en los que se ha visto envuelto el país han impactado también en la confianza que tienen los chilenos en China como gobierno. Se consideró el período entre los años 2017 y 2021 debido a que estos fueron los años tanto previos como posteriores al punto de más tensión entre Estados Unidos y China en la última década, en este caso expresados en el volumen de importaciones por los efectos de la Guerra Comercial entre ambos países.
+
+##### **Descripción de variables de interés e interpretación de los datos**
+
+Las variables de interés son acá la confianza de los chilenos en el gobierno chino, evaluado para los tres años 2017, 2019 y 2021.
+
+La pregunta realizada en la variable dependiente es "Pregunta MIL10A:"El gobierno de China. En su opinión, ¿es muy confiable, algo confiable, poco confiable, nada confiable, o no tiene opinión?".
+
+```{r Descripción de los datos: Variable dependiente}
+Sys.setenv(TZ='GMT')
+library(knitr)
+library(ggplot2)
+library(tidyverse)
+library(sjmisc)
+library(haven)
+library(texreg)
+
+CHL_2017_LAPOP <- read_dta("CHL_2017_LAPOP.dta")
+CHL_2019_LAPOP <- read_dta("CHL_2019_LAPOP.dta")
+CHL_2021_LAPOP <- read_dta("CHL_2021_LAPOP.dta")
+
+#Frecuencia
+frq(CHL_2017_LAPOP, mil10a)
+frq(CHL_2019_LAPOP, mil10a)
+frq(CHL_2021_LAPOP, mil10a)
+
+# En el año 2017 se da la mayor cantidad de respuestas que presentan a China como algo confiable (22.40%), el porcentaje cambia significativamente el año 2019 debido a la cantidad de encuestados que no responden a la pregunta (o no aplica según el cuestionario) y si bien hay una menor diferencia entre el rango de algo confiable a nada confiable, lidera la respuesta de poco confiable (7.94%); y en el año 2021 vuelve a liderar, ya con una mayor frecuencia, la respuesta de poco confiable (11.37%).
+
+#Mediana
+median(CHL_2017_LAPOP$mil10a, na.rm = TRUE)
+median(CHL_2019_LAPOP$mil10a, na.rm = TRUE)
+median(CHL_2021_LAPOP$mil10a, na.rm = TRUE)
+
+#La mediana refleja la tendencia central de la muestra, la que cambia de ser 2 (Algo confiable) en 2017 a 3 (Poco confiable) en los años 2019 y 2021. Esta tendencia sigue la hipótesis de que el conflicto entre Estados Unidos y China tuvo un impacto negativo en la percepción de chilenos sobre China, además en 2021 también pudo haber afectado la pandemia, pero debido a que no es más negativo que en 2019, es difícil interpretar que este cambio se dio solamente por el COVID-19.
+```
+
+###### **Análisis de variables de interés:**
+
+```{r}
+library(dplyr)
+China_EEUU_2017 <- CHL_2017_LAPOP %>% 
+  select(mil10a, mil10e)
+
+cor(na.omit(US_China_2017)) # Correlación positiva de 0.24 en el año 2017 para la confianza de chilenos hacia Estados Unidos y China.
+
+China_EEUU_2019 <- CHL_2019_LAPOP %>% 
+  select(mil10a, mil10e)
+
+cor(na.omit(China_EEUU_2019)) # Correlación positiva de 0.39 en el año 2019 para la confianza de chilenos hacia Estados Unidos y China.
+
+China_EEUU_2021 <- CHL_2021_LAPOP %>% 
+  select(mil10a, mil10e)
+
+cor(na.omit(China_EEUU_2021)) # Correlación positiva de 0.18 en el año 2021 para la confianza de chilenos hacia Estados Unidos y China.
+
+# Debido a que mi variable dependiente e independiente son variables categóricas, para que esto no sea un problema, se tiene que pasar de cuatro categorías a dos, donde 0 es confiable y 1 no confiable:
+
+#2017
+China_EEUU_2017 <- CHL_2017_LAPOP %>% 
+  mutate(mil10a_rec = rec(mil10a,
+                          rec = "1,2=0; 3,4=1")) %>% 
+  mutate(mil10a_rec = as.numeric(mil10a_rec))
+
+China_EEUU_2017 <- CHL_2017_LAPOP %>%
+  mutate(mil10e_rec = rec(mil10e,
+                          rec =  "1,2=0; 3,4=1")) %>%
+  mutate(mil10e_rec = as.numeric(mil10e_rec))
+
+#2019
+China_EEUU_2019 <- CHL_2019_LAPOP %>% 
+  mutate(mil10a_rec = rec(mil10a,
+                          rec = "1,2=0; 3,4=1")) %>% 
+  mutate(mil10a_rec = as.numeric(mil10a_rec))
+
+China_EEUU_2019 <- CHL_2019_LAPOP %>%
+  mutate(mil10e_rec = rec(mil10e,
+                          rec =  "1,2=0; 3,4=1")) %>%
+  mutate(mil10e_rec = as.numeric(mil10e_rec))
+
+#2021
+China_EEUU_2021 <- CHL_2021_LAPOP %>% 
+  mutate(mil10a_rec = rec(mil10a,
+                          rec = "1,2=0; 3,4=1")) %>% 
+  mutate(mil10a_rec = as.numeric(mil10a_rec))
+
+China_EEUU_2021 <- CHL_2021_LAPOP %>%
+  mutate(mil10e_rec = rec(mil10e,
+                          rec =  "1,2=0; 3,4=1")) %>%
+  mutate(mil10e_rec = as.numeric(mil10e_rec))
+```
+
+##### **Modelo lineal, año 2017.**
+
+```{r modelo 2017}
+
+library(ggcorrplot)
+corr_usa_china_2017 <- China_EEUU_2017 %>% 
+  select(mil10a,mil10e) %>% 
+  cor(use = "pairwise") %>% 
+  round(1)
+
+ggcorrplot(corr_usa_china_2017, type = "lower", lab = T, show.legend = F)
+
+#Tienen una correlación de 0.2.
+
+modelo_2017 <- lm (mil10e ~ 1 + mil10a, data = China_EEUU_2017, na.action = na.exclude)
+summary(modelo_2017)
+screenreg(modelo_2017)
+
+#MIL10A tiene un efecto positivo de magnitud 0.25, lo que significaría que cuando la confianza en China aumenta una un dad, la confianza en Estados Unidos aumenta un 0.25%.
+
+#Representación gráfica
+
+ggplot(data = China_EEUU_2017,
+       aes(x = mil10e, y = mil10a))+
+       geom_point() +
+       geom_smooth(method = "lm",
+                   se = F,
+                   color = "green")+
+       labs (title = "Ajuste lineal entre la confianza de chilenos en Estados Unidos y en China en el año 2017", x = "Confianza en Estados Unidos", y = "Confianza en China")
+
+```
+
+##### Modelo año 2019
+
+```{r modelo 2019}
+
+library(ggcorrplot)
+corr_usa_china_2019 <- China_EEUU_2019 %>% 
+  select(mil10a,mil10e) %>% 
+  cor(use = "pairwise") %>% 
+  round(1)
+
+ggcorrplot(corr_usa_china_2019, type = "lower", lab = T, show.legend = F)
+
+#Tienen una correlación de 0.4.
+
+modelo_2019 <- lm (mil10e ~ 1 + mil10a, data = China_EEUU_2019, na.action = na.exclude)
+summary(modelo_2019)
+screenreg(modelo_2019)
+
+#MIL10A tiene un efecto positivo de magnitud 0.33, lo que significaría que cuando la confianza en China aumenta una un dad, la confianza en Estados Unidos aumenta un 0.33%.
+
+#Representación gráfica
+
+ggplot(data = China_EEUU_2019,
+       aes(x = mil10e, y = mil10a))+
+       geom_point() +
+       geom_smooth(method = "lm",
+                   se = F,
+                   color = "green")+
+       labs (title = "Ajuste lineal entre la confianza de chilenos en Estados Unidos y en China en el año 2019", x = "Confianza en Estados Unidos", y = "Confianza en China")
+```
+
+##### Modelo 2021
+
+```{r modelo 2021}
+
+library(ggcorrplot)
+corr_usa_china_2021 <- China_EEUU_2021 %>% 
+  select(mil10a,mil10e) %>% 
+  cor(use = "pairwise") %>% 
+  round(1)
+
+ggcorrplot(corr_usa_china_2021, type = "lower", lab = T, show.legend = F)
+
+#Tienen una correlación de 0.2.
+
+modelo_2021 <- lm (mil10e ~ 1 + mil10a, data = China_EEUU_2021, na.action = na.exclude)
+summary(modelo_2021)
+screenreg(modelo_2021)
+
+#MIL10A tiene un efecto positivo de magnitud 0.19, lo que significaría que cuando la confianza en China aumenta una un dad, la confianza en Estados Unidos aumenta un 0.19%.
+
+#Representación gráfica
+
+ggplot(data = China_EEUU_2021,
+       aes(x = mil10e, y = mil10a))+
+       geom_point() +
+       geom_smooth(method = "lm",
+                   se = F,
+                   color = "green")+
+       labs (title = "Ajuste lineal entre la confianza de chilenos en Estados Unidos y en China en el año 2021", x = "Confianza en Estados Unidos", y = "Confianza en China")
+```
