@@ -1,8 +1,14 @@
 ---
-title: "Entrega Final"
-author: "Carla Puentes"
-date: "2022-12-04"
-output: html_document
+title: "Entrega Final: Confianza en China"
+description: |
+  A short description of the post.
+author:
+  - name: Carla Puentes
+    url: https://phzcarla.github.io
+date: 2022-12-05
+output:
+  distill::distill_article:
+    self_contained: false
 ---
 
 ### **Confianza en China y Estados Unidos en período de Guerra Comercial, 2017-2021**
@@ -78,7 +84,7 @@ library(dplyr)
 China_EEUU_2017 <- CHL_2017_LAPOP %>% 
   select(mil10a, mil10e)
 
-cor(na.omit(US_China_2017)) # Correlación positiva de 0.24 en el año 2017 para la confianza de chilenos hacia Estados Unidos y China.
+cor(na.omit(China_EEUU_2017)) # Correlación positiva de 0.24 en el año 2017 para la confianza de chilenos hacia Estados Unidos y China.
 
 China_EEUU_2019 <- CHL_2019_LAPOP %>% 
   select(mil10a, mil10e)
@@ -222,3 +228,4 @@ ggplot(data = China_EEUU_2021,
 
 # Para concluir, y teniendo en cuenta los años en los que se tomaron las muestras (2017, 2019 y 2021), si bien la confianza en China no tuvo un cambio fuerte en comparación al año 2017, sí es significativo con respecto a la confianza que los chilenos tiene en Estados Unidos. La Guerra Comercial que comenzó el año 2018 y tuvo su mayor punto de tensión en el año 2019 demuestra ser un momento crucial para la diplomacia China, especialmente considerando lo expuesto anteriormente sobre la relevancia de la confianza y percepción entre países para lograr acuerdos bilaterales.
 # Para un mejor análisis hubiera sido útil incorporar el aspecto temporal en los modelos realizados, esto se puede realizar a través de un modelo de panel (para el que no cuento con las herramientas para elaborar). También hubiera sido útil utilizar las otras preguntas en el cuestionario del año 2021, que sí incluyen una distinción entre la confianza en China en el área política y económica; debido a que se realizó la comparación entre tres años que no contaban con las mismas preguntas del cuestionario 2021, no se pudo realizar. En el caso del cuestionario 2021, se pudo haber realizado un análisis de componentes principales para revisar cuánto afecta cada variable (confianza política o económica) a la confianza general de los chilenos en China.
+
