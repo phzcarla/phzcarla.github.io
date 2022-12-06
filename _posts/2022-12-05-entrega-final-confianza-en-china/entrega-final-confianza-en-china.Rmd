@@ -1,7 +1,6 @@
 ---
 title: "Entrega Final: Confianza en China"
-description: |
-  Confianza en China y Estados Unidos en período de Guerra Comercial, 2017-2021
+description: Confianza en China y Estados Unidos en período de Guerra Comercial 2017-2021.
 author:
   - name: Carla Puentes
     url: https://phzcarla.github.io
